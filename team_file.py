@@ -8,7 +8,7 @@ for n in range(len(team_list)):
 file.close
 
 file = open("teams.txt", "r")
-
+for 
 print(file.readline())
 file.readline()
 
