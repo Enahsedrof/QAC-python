@@ -1,18 +1,23 @@
 class Student:
 
-    def __init__(self, name, age, class_, score):
+    def __init__(self, name, age, studentclass):
         self.name = name
         self.age = age
-        self.class_ = "student"
-        self.score = score
+        self.studentclass = "student"
 
-test_1 = int(input("Enter first test score: "))
-test_2 = int(input("Enter second test score: "))
-test_3 = int(input("Enter third test score: "))
+    def scoreavg(self, Test1, Test2, Test3):
+        avg = (Test1 + Test2 + Test3)/3
+        return avg
+        
 
 
 
-John = Student("John", "21", "", ((test_1 + test_2 + test_3)/3))
-Jane = Student("Jane", "22", "", "")
 
-print(getattr(John, "score"))
+
+Ben = Student("John", 21, '1A')
+print ("Students Name: ", Ben.name)
+print ("Students Age: ", Ben.age)
+print ("Students class: ", Ben.studentclass)
+print (Ben.scoreavg(12,6,8))
+Jane = Student("Jane", "22", "")
+
